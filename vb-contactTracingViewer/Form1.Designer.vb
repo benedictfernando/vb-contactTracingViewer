@@ -36,13 +36,13 @@ Partial Class Form1
         Me.header = New System.Windows.Forms.Label()
         Me.submission = New System.Windows.Forms.Label()
         Me.temp = New System.Windows.Forms.Label()
-        Me.name = New System.Windows.Forms.Label()
+        Me.fullName = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.Label()
         Me.address = New System.Windows.Forms.Label()
         Me.contacts = New System.Windows.Forms.Label()
         Me.status = New System.Windows.Forms.Label()
-        Me.left = New System.Windows.Forms.Button()
-        Me.right = New System.Windows.Forms.Button()
+        Me.leftArrow = New System.Windows.Forms.Button()
+        Me.rightArrow = New System.Windows.Forms.Button()
         Me.pages = New System.Windows.Forms.Label()
         Me.outerTable.SuspendLayout()
         Me.innerTable.SuspendLayout()
@@ -109,8 +109,8 @@ Partial Class Form1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
-        Me.TableLayoutPanel2.Controls.Add(Me.left, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.right, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.leftArrow, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.rightArrow, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.pages, 1, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(247, 343)
@@ -148,7 +148,7 @@ Partial Class Form1
         'GroupBox3
         '
         Me.innerTable.SetColumnSpan(Me.GroupBox3, 2)
-        Me.GroupBox3.Controls.Add(Me.name)
+        Me.GroupBox3.Controls.Add(Me.fullName)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox3.Location = New System.Drawing.Point(3, 139)
         Me.GroupBox3.Name = "GroupBox3"
@@ -242,18 +242,18 @@ Partial Class Form1
         Me.temp.Text = "Loading..."
         Me.temp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'name
+        'fullName
         '
-        Me.name.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.name.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.name.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.name.Location = New System.Drawing.Point(3, 18)
-        Me.name.Name = "name"
-        Me.name.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.name.Size = New System.Drawing.Size(476, 41)
-        Me.name.TabIndex = 0
-        Me.name.Text = "Loading..."
-        Me.name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.fullName.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.fullName.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.fullName.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.fullName.Location = New System.Drawing.Point(3, 18)
+        Me.fullName.Name = "fullName"
+        Me.fullName.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.fullName.Size = New System.Drawing.Size(476, 41)
+        Me.fullName.TabIndex = 0
+        Me.fullName.Text = "Loading..."
+        Me.fullName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'gender
         '
@@ -307,27 +307,27 @@ Partial Class Form1
         Me.status.Text = "Loading..."
         Me.status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'left
+        'leftArrow
         '
-        Me.left.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.left.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.left.Location = New System.Drawing.Point(3, 13)
-        Me.left.Name = "left"
-        Me.left.Size = New System.Drawing.Size(73, 39)
-        Me.left.TabIndex = 0
-        Me.left.Text = "<"
-        Me.left.UseVisualStyleBackColor = True
+        Me.leftArrow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.leftArrow.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.leftArrow.Location = New System.Drawing.Point(3, 13)
+        Me.leftArrow.Name = "leftArrow"
+        Me.leftArrow.Size = New System.Drawing.Size(73, 39)
+        Me.leftArrow.TabIndex = 0
+        Me.leftArrow.Text = "<"
+        Me.leftArrow.UseVisualStyleBackColor = True
         '
-        'right
+        'rightArrow
         '
-        Me.right.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.right.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.right.Location = New System.Drawing.Point(161, 13)
-        Me.right.Name = "right"
-        Me.right.Size = New System.Drawing.Size(74, 39)
-        Me.right.TabIndex = 1
-        Me.right.Text = ">"
-        Me.right.UseVisualStyleBackColor = True
+        Me.rightArrow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rightArrow.Font = New System.Drawing.Font("Century Gothic", 13.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.rightArrow.Location = New System.Drawing.Point(161, 13)
+        Me.rightArrow.Name = "rightArrow"
+        Me.rightArrow.Size = New System.Drawing.Size(74, 39)
+        Me.rightArrow.TabIndex = 1
+        Me.rightArrow.Text = ">"
+        Me.rightArrow.UseVisualStyleBackColor = True
         '
         'pages
         '
@@ -350,7 +350,7 @@ Partial Class Form1
         Me.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.name = "Form1"
+        Me.Name = "Form1"
         Me.Text = "Contact Tracing Viewer"
         Me.outerTable.ResumeLayout(False)
         Me.innerTable.ResumeLayout(False)
@@ -371,15 +371,15 @@ Partial Class Form1
     Friend WithEvents outerTable As TableLayoutPanel
     Friend WithEvents innerTable As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents left As Button
-    Friend WithEvents right As Button
+    Friend WithEvents leftArrow As Button
+    Friend WithEvents rightArrow As Button
     Friend WithEvents pages As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents submission As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents temp As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents name As Label
+    Friend WithEvents fullName As Label
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents gender As Label
     Friend WithEvents GroupBox5 As GroupBox
