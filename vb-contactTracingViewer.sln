@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "vb-contactTracingViewer", "vb-contactTracingViewer\vb-contactTracingViewer.vbproj", "{52A826B1-C88B-4173-B146-168081416FA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52A826B1-C88B-4173-B146-168081416FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A826B1-C88B-4173-B146-168081416FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A826B1-C88B-4173-B146-168081416FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A826B1-C88B-4173-B146-168081416FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA5712DB-2DEC-48BC-9C45-24F7A2B7618A}
+	EndGlobalSection
+EndGlobal
